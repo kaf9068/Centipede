@@ -1,4 +1,7 @@
 #pragma once
+
+#include "GameObject.h"
+
 #include <glm\glm.hpp>
 #include <glm\gtx\transform.hpp>
 #include <glew.h>
@@ -22,5 +25,7 @@ public:
 
 private:
 	static vec2 getCursorPos(GLFWwindow* windowPtr);
+
+	GameObject grid[30][30];
 };
 
